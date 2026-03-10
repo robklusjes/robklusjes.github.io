@@ -1,11 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-  <title>Mijn website</title>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klusjesman Jan - Betrouwbare Klusservice</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#2c3e50;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#34495e;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:40px;
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    margin-top:20px;
+    border-radius:8px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.service{
+    background:#ecf0f1;
+    padding:20px;
+    border-radius:6px;
+}
+
+.cta{
+    display:inline-block;
+    padding:12px 20px;
+    background:#e67e22;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#2c3e50;
+    color:white;
+    margin-top:20px;
+}
+</style>
 </head>
+
 <body>
-  <h1>Welkom op mijn website</h1>
-  <p>Deze site draait op GitHub Pages.</p>
+
+<header>
+<h1>Klusjesman Jan</h1>
+<p>Voor al uw klussen in en rondom het huis</p>
+</header>
+
+<nav>
+<a href="#diensten">Diensten</a>
+<a href="#over">Over ons</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="diensten">
+<h2>Diensten</h2>
+
+<div class="services">
+<div class="service">
+<h3>Schilderwerk</h3>
+<p>Binnen- en buitenschilderwerk voor woning en kantoor.</p>
+</div>
+
+<div class="service">
+<h3>Montage</h3>
+<p>Meubels, kasten en keukens professioneel gemonteerd.</p>
+</div>
+
+<div class="service">
+<h3>Reparaties</h3>
+<p>Kleine en grote reparaties in huis snel opgelost.</p>
+</div>
+
+<div class="service">
+<h3>Tuinwerk</h3>
+<p>Onderhoud, schuttingen plaatsen en kleine tuinprojecten.</p>
+</div>
+</div>
+
+</section>
+
+<section id="over">
+<h2>Over ons</h2>
+<p>
+Klusjesman Jan is een betrouwbare vakman met meer dan 10 jaar ervaring.
+Wij helpen particulieren en bedrijven met allerlei klussen in en rondom het huis.
+Kwaliteit, duidelijke afspraken en eerlijke prijzen staan bij ons centraal.
+</p>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Heeft u een klus? Neem gerust contact op!</p>
+
+<p><strong>Telefoon:</strong> 06-12345678</p>
+<p><strong>Email:</strong> info@klusjesmanjan.nl</p>
+
+<a class="cta" href="tel:0612345678">Bel direct</a>
+</section>
+
+<footer>
+<p>© 2026 Klusjesman Jan</p>
+</footer>
+
 </body>
 </html>
