@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rob Klusjes | Betrouwbare Klusservice</title>
+<meta name="description" content="Rob Klusjes: betrouwbare klusservice voor schilderwerk, montage, reparaties en tuinwerk.">
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#2c3e50;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.header-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    width:90px;
+    max-width:100%;
+}
+
+.header-text{
+    text-align:left;
+}
+
+.header-text h1{
+    margin:0;
+    font-size:28px;
+}
+
+.header-text p{
+    margin:5px 0 0;
+    font-size:16px;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 22px;
+    background:#e67e22;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* NAV */
+nav{
+    background:#34495e;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* SECTIONS */
+section{
+    padding:40px 20px;
+    max-width:1000px;
+    margin:20px auto;
+    background:white;
+    border-radius:8px;
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.service{
+    background:#ecf0f1;
+    padding:20px;
+    border-radius:6px;
+}
+
+/* PORTFOLIO */
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.portfolio-item{
+    background:#ecf0f1;
+    border-radius:6px;
+    overflow:hidden;
+    text-align:center;
+    transition:0.3s;
+}
+
+.portfolio-item img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+/* fallback als afbeelding ontbreekt */
+.portfolio-item img:before{
+    content:"Afbeelding ontbreekt";
+}
+
+.portfolio-item:hover{
+    transform:scale(1.03);
+}
+
+.portfolio-item p{
+    padding:10px;
+    font-weight:bold;
+}
+
+/* CTA */
+.cta{
+    display:inline-block;
+    padding:12px 20px;
+    background:#e67e22;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#2c3e50;
+    color:white;
+    margin-top:20px;
+}
+
+.footer-logo{
+    width:60px;
+    margin-bottom:10px;
+}
+
+/* MOBILE FIX */
+@media(max-width:600px){
+    .header-text{
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="header-content">
+    <img src="logo.png" alt="Rob Klusjes logo" class="logo" onerror="this.style.display='none'">
+    <div class="header-text">
+        <h1>Rob Klusjes</h1>
+        <p>Dé betrouwbare klusservice voor al uw werkzaamheden</p>
+    </div>
+</div>
+
+<a class="hero-btn" href="#contact">Vraag direct een offerte aan</a>
+</header>
+
+<nav>
+<a href="#diensten">Diensten</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#over">Over ons</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="diensten">
+<h2>Diensten</h2>
+
+<div class="services">
+<div class="service">
+<h3>Schilderwerk</h3>
+<p>Strak binnen- en buitenschilderwerk.</p>
+</div>
+
+<div class="service">
+<h3>Montage</h3>
+<p>Meubels en keukens professioneel gemonteerd.</p>
+</div>
+
+<div class="service">
+<h3>Reparaties</h3>
+<p>Kleine en grote reparaties snel opgelost.</p>
+</div>
+
+<div class="service">
+<h3>Tuinwerk</h3>
+<p>Onderhoud, schuttingen en kleine tuinprojecten.</p>
+</div>
+</div>
+</section>
+
+<section id="portfolio">
+<h2>Portfolio</h2>
+<p>Bekijk een aantal van mijn recente projecten</p>
+
+<div class="portfolio-grid">
+
+<div class="portfolio-item">
+<img src="project1.jpg" alt="Schilderwerk woonkamer" onerror="this.src='https://via.placeholder.com/300x180?text=Project'">
+<p>Schilderwerk woonkamer</p>
+</div>
+
+<div class="portfolio-item">
+<img src="project2.jpg" alt="Keuken montage" onerror="this.src='https://via.placeholder.com/300x180?text=Project'">
+<p>Keuken montage</p>
+</div>
+
+<div class="portfolio-item">
+<img src="project3.jpg" alt="Schutting geplaatst" onerror="this.src='https://via.placeholder.com/300x180?text=Project'">
+<p>Schutting geplaatst</p>
+</div>
+
+<div class="portfolio-item">
+<img src="project4.jpg" alt="Badkamer reparatie" onerror="this.src='https://via.placeholder.com/300x180?text=Project'">
+<p>Badkamer reparatie</p>
+</div>
+
+</div>
+</section>
+
+<section id="over">
+<h2>Over Rob Klusjes</h2>
+<p>
+Met meer dan 10 jaar ervaring help ik particulieren en bedrijven met uiteenlopende klussen.
+Ik sta voor kwaliteit, duidelijke afspraken en een nette afwerking.
+</p>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Heeft u een klus? Neem vrijblijvend contact op!</p>
+
+<p><strong>Telefoon:</strong> 06-12345678</p>
+<p><strong>Email:</strong> robklusjes@gmail.com</p>
+
+<a class="cta" href="tel:0612345678">Bel direct</a>
+</section>
+
+<footer>
+<img src="logo.png" alt="Rob Klusjes logo" class="footer-logo" onerror="this.style.display='none'">
+<p>© 2026 Rob Klusjes</p>
+</footer>
+
+</body>
+</html>
