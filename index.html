@@ -5,9 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Rob Klusjes | Betrouwbare Klusservice</title>
-<meta name="description" content="Rob Klusjes: betrouwbare klusservice voor kleine klusjes.">
+<meta name="description" content="Rob Klusjes: betrouwbare klusservice voor kleine klusjes in en om het huis.">
 
 <style>
+*{
+    box-sizing:border-box;
+}
+
 body{
     font-family: Arial, sans-serif;
     margin:0;
@@ -33,6 +37,7 @@ header{
 
 .logo{
     width:90px;
+    max-width:100%;
 }
 
 .header-text{
@@ -41,10 +46,12 @@ header{
 
 .header-text h1{
     margin:0;
+    font-size:28px;
 }
 
 .header-text p{
     margin:5px 0 0;
+    font-size:16px;
 }
 
 .hero-btn{
@@ -57,7 +64,7 @@ header{
     border-radius:5px;
     font-weight:bold;
 }
-    
+
 /* NAV */
 nav{
     background:#34495e;
@@ -67,25 +74,24 @@ nav{
 
 nav a{
     color:white;
-    margin:0 15px;
+    margin:0 10px;
     text-decoration:none;
     font-weight:bold;
 }
 
 /* SECTIONS */
 section{
-    padding:40px;
+    padding:40px 20px;
     max-width:1000px;
-    margin:auto;
+    margin:20px auto;
     background:white;
-    margin-top:20px;
     border-radius:8px;
 }
 
 /* SERVICES */
 .services{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
 }
 
@@ -115,6 +121,11 @@ section{
     width:100%;
     height:180px;
     object-fit:cover;
+}
+
+/* fallback als afbeelding ontbreekt */
+.portfolio-item img:before{
+    content:"Afbeelding ontbreekt";
 }
 
 .portfolio-item:hover{
@@ -150,6 +161,13 @@ footer{
     width:60px;
     margin-bottom:10px;
 }
+
+/* MOBILE FIX */
+@media(max-width:600px){
+    .header-text{
+        text-align:center;
+    }
+}
 </style>
 </head>
 
@@ -157,17 +175,18 @@ footer{
 
 <header>
 <div class="header-content">
-    <img src="logo.png" alt="Rob Klusjes logo" class="logo">
+    <img src="logo.png" alt="Rob Klusjes logo" class="logo" onerror="this.style.display='none'">
     <div class="header-text">
         <h1>Rob Klusjes</h1>
-        <p>betrouwbare klusservice voor kleine klusjes</p>
+        <p>betrouwbare klusservice voor kleine klusjes in en om het huis</p>
     </div>
 </div>
+</header>
 
 <nav>
 <a href="#diensten">Diensten</a>
 <a href="#portfolio">Portfolio</a>
-<a href="#over">Over ons</a>
+<a href="#over">Over mij</a>
 <a href="#contact">Contact</a>
 </nav>
 
@@ -176,19 +195,21 @@ footer{
 
 <div class="services">
 <div class="service">
-<h3>Diverse klusjes en reparaties</h3>
-<p>Lamp ophangen, kraan plaatsen, stopcontact aanleggen, afvoer maken.</p>
+<h3>Diverse Klusjes</h3>
+<p>Lamp ophangen, kraan plaatsen, schilderwerk, stopcontact plaatsen, afvoer maken, reparaties.</p>
 </div>
 
 <div class="service">
-<h3>Montage</h3>
-<p>Monteren van meubels, keukens en het leggen van (laminaat of houten) vloeren.</p>
+<h3>Montage klusjes</h3>
+<p>Meubels en keukens monteren, laminaat en houten vloeren leggen.</p>
 </div>
 
 <div class="service">
-<h3>Tuinwerk</h3>
+<h3>Tuin klusjes</h3>
 <p>Onderhoud, schuttingen en kleine tuinprojecten.</p>
 </div>
+</div>
+</section>
 
 <section id="portfolio">
 <h2>Portfolio</h2>
@@ -197,18 +218,18 @@ footer{
 <div class="portfolio-grid">
 
 <div class="portfolio-item">
-<img src="project1.jpg" alt="Diverse klusjes en reparaties">
-<p>Diverse klusjes en reparaties</p>
+<img src="project1.jpg" alt="Diverse klusjes" onerror="this.src='https://via.placeholder.com/300x180?text=Project'">
+<p>Diverse klusjes</p>
 </div>
 
 <div class="portfolio-item">
-<img src="project2.jpg" alt="Montage">
-<p>Montage</p>
+<img src="project2.jpg" alt="Montage klusjes" onerror="this.src='https://via.placeholder.com/300x180?text=Project'">
+<p>Montage klusjes</p>
 </div>
 
 <div class="portfolio-item">
-<img src="project3.jpg" alt="Tuinwerk">
-<p>Tuinwerk</p>
+<img src="project3.jpg" alt="Tuin klusjes" onerror="this.src='https://via.placeholder.com/300x180?text=Project'">
+<p>Tuin klusjes</p>
 </div>
 
 </div>
@@ -217,14 +238,14 @@ footer{
 <section id="over">
 <h2>Over mij</h2>
 <p>
-Met meer dan 10 jaar ervaring help ik particulieren en bedrijven met uiteenlopende klusjes.
+Met meer dan 10 jaar ervaring help ik particulieren en bedrijven met uiteenlopende klussen.
 Ik sta voor kwaliteit, duidelijke afspraken en een nette afwerking.
 </p>
 </section>
 
 <section id="contact">
 <h2>Contact</h2>
-<p>klusje te doen? Neem vrijblijvend contact op!</p>
+<p>Klusje te doen? Neem vrijblijvend contact op!</p>
 
 <p><strong>Telefoon:</strong> 06-40206897</p>
 <p><strong>Email:</strong> robklusjes@gmail.com</p>
@@ -232,6 +253,7 @@ Ik sta voor kwaliteit, duidelijke afspraken en een nette afwerking.
 </section>
 
 <footer>
+<img src="logo.png" alt="Rob Klusjes logo" class="footer-logo" onerror="this.style.display='none'">
 <p>© 2026 Rob Klusjes</p>
 </footer>
 
