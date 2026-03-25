@@ -18,6 +18,17 @@
 .over-img{
     width:160px;
     border-radius:6px;
+    flex-shrink:0; /* voorkomt dat afbeelding kleiner wordt */
+}
+
+.over-container p{
+    margin:0;
+}
+
+@media(max-width:600px){
+    .over-container{
+        flex-direction:column;
+    }
 }
     
 *{
